@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>ABC PROFILE</title>
 
   <link rel="stylesheet" href="style.css">
@@ -10,42 +11,57 @@
 
 <body>
 
-<header>
-  <h1>ABC PROFILE</h1>
+<header class="hero">
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Projects</a>
-    <a href="#">Discord</a>
-    <a href="#">Games</a>
+    <h1>ABC</h1>
+
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#games">Games</a>
+    </div>
   </nav>
+
+  <div class="hero-content">
+    <h2>ABC PROFILE</h2>
+
+    <p>
+      Minecraft • Hosting • Discord • Projects
+    </p>
+
+    <a href="#projects" class="button">
+      View Projects
+    </a>
+  </div>
+
 </header>
 
-<section class="about">
+<section id="about" class="section">
 
   <img src="images/logo.png" class="logo">
 
-  <div class="text">
-    <h2>Welcome to ABC</h2>
+  <div>
+    <h2>About ABC</h2>
 
     <p>
-      ABC is a community and project hub focused on
+      ABC is a gaming and project community focused on
       Minecraft servers, Discord communities,
-      hosting projects, websites, and gaming.
+      websites and hosting projects.
     </p>
   </div>
 
 </section>
 
-<section class="projects">
+<section id="projects" class="section">
 
-  <h2>ABC Projects</h2>
+  <h2>Projects</h2>
 
   <div class="cards">
 
     <div class="card">
       <h3>ABC HOSTINGS</h3>
-      <p>Minecraft hosting projects.</p>
+      <p>Minecraft hosting systems.</p>
     </div>
 
     <div class="card">
@@ -55,16 +71,16 @@
 
     <div class="card">
       <h3>NEOCITY</h3>
-      <p>Discord & gaming community.</p>
+      <p>Gaming & Discord community.</p>
     </div>
 
   </div>
 
 </section>
 
-<section class="games">
+<section id="games" class="section">
 
-  <h2>Games I Play</h2>
+  <h2>Games</h2>
 
   <div class="cards">
 
@@ -74,6 +90,10 @@
 
     <div class="card">
       <h3>Minecraft Bedrock</h3>
+    </div>
+
+    <div class="card">
+      <h3>Roblox</h3>
     </div>
 
   </div>
