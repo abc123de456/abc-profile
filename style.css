@@ -1,78 +1,120 @@
-body{
+*{
   margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
   font-family:Arial;
-  background:#0f172a;
+  background:#050816;
   color:white;
+  overflow-x:hidden;
 }
 
-header{
-  background:linear-gradient(to right,#111827,#1e3a8a);
-  padding:40px;
-  text-align:center;
+html{
+  scroll-behavior:smooth;
 }
 
-header h1{
-  font-size:50px;
-  margin-bottom:20px;
+.hero{
+  height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,0.7),
+  rgba(0,0,0,0.7)),
+  url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071');
+
+  background-size:cover;
+  background-position:center;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:30px 60px;
+}
+
+nav h1{
+  color:#60a5fa;
 }
 
 nav a{
   color:white;
+  margin-left:20px;
   text-decoration:none;
-  margin:15px;
-  font-size:18px;
 }
 
 nav a:hover{
   color:#60a5fa;
 }
 
-.about{
+.hero-content{
+  height:80vh;
   display:flex;
+  flex-direction:column;
   justify-content:center;
   align-items:center;
-  gap:50px;
-  padding:60px;
-  flex-wrap:wrap;
+  text-align:center;
+}
+
+.hero-content h2{
+  font-size:90px;
+  margin-bottom:20px;
+}
+
+.hero-content p{
+  font-size:24px;
+  margin-bottom:30px;
+}
+
+.button{
+  padding:15px 30px;
+  background:#2563eb;
+  border-radius:12px;
+  color:white;
+  text-decoration:none;
+}
+
+.button:hover{
+  background:#3b82f6;
+}
+
+.section{
+  padding:100px 10%;
 }
 
 .logo{
   width:180px;
   border-radius:20px;
-}
-
-.text{
-  max-width:500px;
-}
-
-.projects,
-.games{
-  text-align:center;
-  padding:50px;
+  margin-bottom:30px;
 }
 
 .cards{
   display:flex;
-  justify-content:center;
-  gap:25px;
+  gap:30px;
   flex-wrap:wrap;
+  margin-top:40px;
 }
 
 .card{
-  background:#1e293b;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+
   padding:30px;
-  width:250px;
   border-radius:20px;
+
+  width:300px;
+
+  backdrop-filter:blur(10px);
+
   transition:0.3s;
 }
 
 .card:hover{
-  transform:scale(1.05);
-  background:#2563eb;
+  transform:translateY(-10px);
+  border-color:#60a5fa;
 }
 
 footer{
-  background:black;
   text-align:center;
-  padding:20px;
+  padding:30px;
+  background:black;
 }
